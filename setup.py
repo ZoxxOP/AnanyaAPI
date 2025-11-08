@@ -1,7 +1,7 @@
 from setuptools import setup,find_packages
 import re
 def version():
-    filename = "PurviAPI/__init__.py"
+    filename = "AnanyaAPI/__init__.py"
     with open(filename) as f:
         match = re.search(r"""^__version__ = ['"]([^'"]*)['"]""", f.read(), re.M)
     if not match:
@@ -15,17 +15,17 @@ with open("README.md", encoding="utf8") as readme:
 
 # Setting up
 setup(
-    name="PurviAPI",
+    name="AnanyaAPI",
     version=version(),
-    author="RAUSHAN| Bad",
-    author_email="raushankumarpal03@gmail.com",
-    description="python api hub | PurviAPI",
+    author="Akash| Bad",
+    author_email="akp954834@gmail.com",
+    description="python api hub | AnanyaAPI",
     long_description_content_type="text/markdown",
     long_description=long_desc,
     packages=find_packages(),
     license="MIT",
-    url="https://github.com/TEAMPURVI/PurviAPI",
-    download_url="https://github.com/TEAMPURVI/PurviAPI/blob/main/README.md",
+    url="https://github.com/ZoxxOP/AnanyaAPI",
+    download_url="https://github.com/ZoxxOP/AnanyaAPI/blob/main/README.md",
     install_requires=["pytz>=2023.3","requests-html","pillow","lxml_html_clean"],
     keywords=['python', "PurviAPI","flask"],
     classifiers=[
@@ -53,9 +53,9 @@ setup(
     ],
     
     project_urls={
-        "Tracker": "https://github.com/PurviAPI/PurviAPI/issues",
-        "Community": "https://t.me/purvi_support",
-        "Source": "https://github.com/TEAMPURVI/PurviAPI",
+        "Tracker": "https://github.com/AnanyaAPI/AnanyaAPI/issues",
+        "Community": "https://t.me/AnanyaBotSupport",
+        "Source": "https://github.com/ZoxxOP/AnanyaAPI",
     },
     python_requires="~=3.7",
 )
